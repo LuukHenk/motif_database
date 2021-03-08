@@ -1,0 +1,41 @@
+Python 3.8.5 (default, Jan 27 2021, 15:41:15)
+(InteractiveConsole)
+>>> from motif_database.models import *
+>>> Motifs
+<class 'motif_database.models.Motifs'>
+>>> Motifs.objects.create(sequence="ABC")
+<Motifs: ABC>
+>>> Motifs.objects.create(sequence="DEF")
+<Motifs: DEF>
+>>> Motifs.objects.all()
+<QuerySet [<Motifs: ABC>, <Motifs: DEF>]>
+>>> Proteins.objects.create(label="Protein1", sequence="ABCDEFGHI")
+<Proteins: Protein1>
+>>> Proteins.objects.create(label="Protein2", sequence="DEFGHIJKL")
+<Proteins: Protein2>
+>>> Proteins.objects.all()
+<QuerySet [<Proteins: Protein1>, <Proteins: Protein2>]>
+
+>>> motif_ABC = Motifs.objects.get(pk="ABC")
+>>> motif_DEF = Motifs.objects.get(pk="DEF")
+>>> protein1 = Proteins.objects.get(pk="Protein1")
+>>> protein2 = Proteins.objects.get(pk="Protein2")
+>>> protein1_motif = ProteinMotifs(protein=protein1, motif=motif_ABC, site="A1")
+>>> protein1_motif.save()
+>>> protein1.motifs.all()
+<QuerySet [<Motifs: ABC>]>
+>>> protein1_motif2 = ProteinMotifs(protein=protein1, motif=motif_DEF, site="D4")
+>>> protein1_motif2.save()
+>>> protein1.motifs.all()
+<QuerySet [<Motifs: ABC>, <Motifs: DEF>]>
+>>> motif_ABC.proteins_set.all()
+<QuerySet [<Proteins: Protein1>]>
+>>> protein2_motif1 = ProteinMotifs(protein=protein2, motif=motif_DEF, site="D1")
+>>> motif_DEF.proteins_set.all()
+<QuerySet [<Proteins: Protein1>]>
+>>> protein2_motif1.save()
+>>> motif_DEF.proteins_set.all()
+<QuerySet [<Proteins: Protein1>, <Proteins: Protein2>]>
+
+
+
