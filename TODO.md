@@ -18,6 +18,8 @@ Add a search page
 # Ideas
 
 # References
+- Dynamic queryset filtering
+	https://stackoverflow.com/questions/310732/in-django-how-does-one-filter-a-queryset-with-dynamic-field-lookups
 - CSS tips
 	https://www.w3.org/Style/Examples/007/center.en.html
 - Use forms in the correct manner
