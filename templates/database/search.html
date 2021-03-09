@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+			  content="width=device-width, initial-scale=1.0">
+		<title>Motif search</title>
+
+		<link rel="stylesheet" type="text/css" href="{% static 'css/basepage.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/search.css' %}">
+	</head>
+
+	<body>
+		<div class="banner">
+			<img class="logo" src="{% static 'images/ubc_logo_retina.png' %}" alt="UBC logo">
+		</div>
+
+		<div class="search_area" id="search_area">
+			<form method="get">
+
+				<div class="item_block">
+					<label for="protein">Protein</label>
+					<input id="protein" type="text" name="protein" placeholder="TP53">
+				</div>
+
+				<div class="item_block">
+					<label for="motif">Motif</label>
+					<input id="motif" type="text" name="motif" placeholder="S*E">
+				</div>
+
+				<div class="item_block">
+					<label for="protein_sequence">Protein sequence</label>
+					<textarea id="protein_sequence" type="text" name="protein_sequence" placeholder="MSPESEP"></textarea>
+				</div>
+
+				<div class="item_block">
+					<label for="organism">Organism</label>
+					<input id="organism" type="text" name="organism" placeholder="Homo sapiens">
+				</div>
+
+				<div class="item_block">
+					<label for="description">Description</label>
+					<textarea id="description" type="text" name="description" placeholder="..."></textarea>
+				</div>
+
+				<div class="item_block">
+					<input type="submit" value="Search">
+				</div>
+			</form>
+		</div>
+
+	</body>
+</html>
+

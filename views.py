@@ -1,6 +1,7 @@
 """ Views generate content for the webpages """
 
-from django.http import HttpResponseRedirect, HttpResponse
+from django.http import HttpResponseRedirect
+from django.shortcuts import render
 from django.urls import reverse
 
 def index(request):
@@ -8,4 +9,4 @@ def index(request):
     return HttpResponseRedirect(reverse("database:search"))
 
 def search(request):
-    return HttpResponse("Hello world")
+    return render(request, "database/search.html")

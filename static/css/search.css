@@ -1,0 +1,8 @@
+.search_area {
+	margin: 2rem;
+	margin-top: 1rem;
+	border-bottom: 2px solid var(--clr-border);
+}
+.item_block {
+	margin-bottom: 0.5rem;
+}
