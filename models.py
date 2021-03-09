@@ -35,6 +35,11 @@ class Proteins(models.Model):
         blank=True,
         null=True
     )
+    organism = models.TextField(
+        max_length=100,
+        blank=True,
+        null=True
+    )
     motifs = models.ManyToManyField(
         Motifs,
         through='ProteinMotifs'

@@ -38,4 +38,7 @@ Python 3.8.5 (default, Jan 27 2021, 15:41:15)
 <QuerySet [<Proteins: Protein1>, <Proteins: Protein2>]>
 
 
-
+In https://docs.djangoproject.com/en/3.1/topics/db/models/#many-to-many-relationships:
+- Person = Motif
+- Group = Protein
+- Membership = ProteinMotifs
