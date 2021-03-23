@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2021-03-23T10:14:29.014Z" agent="5.0 (X11)" etag="ApEnByGYxNooM4xeKsLe" version="14.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-23T10:55:36.237Z" agent="5.0 (X11)" etag="oi67PRJ0f6_U6NgD-1Az" version="14.5.0" type="github">
   <diagram id="dAFnbspfd55a0AQtZAti" name="Page-1">
-    <mxGraphModel dx="1591" dy="883" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3155" dy="1279" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="G-z_jS81T6HF7UcJ-_au-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-z_jS81T6HF7UcJ-_au-3" target="G-z_jS81T6HF7UcJ-_au-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="G-z_jS81T6HF7UcJ-_au-3" value="Gene symbol" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="280" y="580" width="120" height="60" as="geometry" />
         </mxCell>
@@ -23,19 +26,80 @@
           <mxGeometry x="280" y="460" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="G-z_jS81T6HF7UcJ-_au-5" value="Description" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="440" y="580" width="120" height="60" as="geometry" />
+          <mxGeometry x="620" y="580" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="G-z_jS81T6HF7UcJ-_au-6" value="Organism" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="580" width="120" height="60" as="geometry" />
+        <mxCell id="G-z_jS81T6HF7UcJ-_au-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-z_jS81T6HF7UcJ-_au-6" target="G-z_jS81T6HF7UcJ-_au-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="20" y="770" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-190" y="700" />
+              <mxPoint x="340" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G-z_jS81T6HF7UcJ-_au-6" value="&lt;div&gt;Organism&lt;/div&gt;&lt;div&gt;(default = &#39;homo sapiens&#39;)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-250" y="580" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="G-z_jS81T6HF7UcJ-_au-7" value="Motif / sequence" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="600" y="580" width="120" height="60" as="geometry" />
+          <mxGeometry x="950" y="580" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="G-z_jS81T6HF7UcJ-_au-15" value="Ensembl database (API)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="440" y="780" width="120" height="60" as="geometry" />
+        <mxCell id="G-z_jS81T6HF7UcJ-_au-21" value="Ensembl API" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-300" y="700" width="60" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="G-z_jS81T6HF7UcJ-_au-16" value="Local database" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="280" y="780" width="120" height="60" as="geometry" />
+        <mxCell id="G-z_jS81T6HF7UcJ-_au-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-z_jS81T6HF7UcJ-_au-25" target="G-z_jS81T6HF7UcJ-_au-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G-z_jS81T6HF7UcJ-_au-25" value="&lt;div&gt;Obtain Ensembl gene ID via&lt;/div&gt;&lt;div&gt;https://rest.ensembl.org/xrefs/symbol/{{organism}}/{{geneSymbol}}&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="750" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="G-z_jS81T6HF7UcJ-_au-29" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-330" y="660" as="sourcePoint" />
+            <mxPoint x="1280" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G-z_jS81T6HF7UcJ-_au-30" value="Organism" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-z_jS81T6HF7UcJ-_au-31" value="Description" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="1140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-z_jS81T6HF7UcJ-_au-32" value="Translation display name" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="1140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-z_jS81T6HF7UcJ-_au-36" value="User interface" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-300" y="410" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-z_jS81T6HF7UcJ-_au-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-z_jS81T6HF7UcJ-_au-41" target="G-z_jS81T6HF7UcJ-_au-30">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="1060" />
+              <mxPoint x="120" y="1060" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G-z_jS81T6HF7UcJ-_au-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-z_jS81T6HF7UcJ-_au-41" target="G-z_jS81T6HF7UcJ-_au-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G-z_jS81T6HF7UcJ-_au-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-z_jS81T6HF7UcJ-_au-41" target="G-z_jS81T6HF7UcJ-_au-32">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="1060" />
+              <mxPoint x="540" y="1060" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G-z_jS81T6HF7UcJ-_au-41" value="&lt;div&gt;Obtain Ensembl Transcript ID&#39;s via Ensembl gene ID&lt;/div&gt;&lt;div&gt;https://rest.ensembl.org/lookup/id/{{ensemblGeneId}}?content-type=application/json;expand=0&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="920" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G-z_jS81T6HF7UcJ-_au-48" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-360" y="1030" as="sourcePoint" />
+            <mxPoint x="1250" y="1030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G-z_jS81T6HF7UcJ-_au-49" value="User interface" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-300" y="1070" width="60" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
